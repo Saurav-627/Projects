@@ -1,0 +1,40 @@
+body{
+    font-family: "sofia",sans-serif;
+}
+button{
+    height: 100px;
+    width: 250px;
+    border-radius: 20%;
+    font-size: 45px;
+    font-family: "sofia",sans-serif;
+    background-color: #f0f;
+    margin-top:200px;
+    margin-left: 80px;
+    border: solid 5px #0ff;
+    cursor: pointer;
+    transition: .5s;
+}
+#show{
+    margin-left: 90px;
+}
+#follow{
+    text-shadow: 1px 1px 1px black, 0 0 0.19em #f0f,6px 2px 0.1em red;
+    font-size: 40px;
+    top: 350px;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    left: 85px;
+    cursor: pointer;
+    transition: .5s;
+}
+#follow:hover{
+    border: 3px solid lime;
+    border-radius: 15%;
+    background: orchid;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}

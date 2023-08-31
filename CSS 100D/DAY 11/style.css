@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+:root{
+    --blue:#e5f3fd;
+    --dark:#1f2630;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--blue);
+}
+main{
+    width: 100vw;
+    height: 100%;
+}
+.profile-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, .3)url(https://lh3.googleusercontent.com/proxy/y4I-skJdm50GBWUr2J8bc-lFK0hBv9IZXVezXUbArZfpcOzN1ItGtsO8seeH7G6AGVLKU7s85SlpZAjRu4m-JPWmfNAqfiUj09ONMNgyj8ENW0GXXzw7o9adcB4z=s0-d);
+    background-size: cover;
+    margin-right: 10px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+    height: 63px;
+    background: linear-gradient(to top right, yellowgreen, green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: #fff;
+    transition: 1s;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, .7);
+}
+nav i.fa-bars{
+    color: #fff;
+    font-size: 23px;
+    padding: 7px;
+    transition: .2s;
+    cursor: pointer;
+}
+nav i.fa-bars:hover{
+    color: aqua;
+    scale: 1.5;
+}
+nav i.fa-bars:active{
+    background: rgba(0, 0, 0, .1);
+}
+#menu2{
+    display: none;
+}
+#menu{
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    background: var(--dark);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 63px;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+#menu li{
+    list-style-type: none;
+    width: 100%;
+    padding: 8px;
+    transition: .2s;
+    position: relative;
+}
+#menu li:hover{
+    background: rgba(255, 255, 255, .15);
+    transform: scale(1.05);
+    z-index: 1;
+}
+#menu li i{
+    font-size: 18px;
+    color: #fff;
+    padding: 0 6px 0 0;
+}
+#menu li a,
+#menu li i,li{
+    color: #fff;
+    cursor: pointer;
+}
+#menu li:hover,
+#menu li:hover i{
+    color: yellowgreen;
+}
+.header{
+    width: 100%;
+    height: 450px;
+    background: url(https://clipground.com/images/web-developer-logo.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-cont{
+    width: 100%;
+    height: 450px;
+    background: rgba(0, 0, 0,.4);
+    display: flex;
+    align-items: center;
+}
+.h1{
+    font-size: 23px;
+    font-weight: bolder;
+    margin: 0 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .7);
+}
+.h1 h3{
+    color: yellowgreen;
+}
+.h1 h4{
+    color: #fff;
+    font-size: 25px;
+}
+.about-the{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+}
+.about-content span{
+    color: yellowgreen;
+    font-weight: bold;
+}
+.my-gigs{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    background: transparent;
+    cursor:grabbing;
+}
+.gig-write{
+    margin: 15px;
+    margin-bottom: 0;
+}
+.gigs-cont{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.first-three, .second-three{
+    width: 100%;
+    height: auto;
+}
+.gigo{
+    width: 94%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .15),-3px -3px 10px rgba(0, 0, 0, .1), inset 5px 5px 5px rgba(0, 0, 0, .2);
+    margin: 25px 0;
+    transition: .3s;
+}
+.gigo:hover{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .05),-3px -3px 10px rgba(0, 0, 0, 0),inset 5px 5px 5px rgba(0, 0, 0, .3);
+    width: 94%;
+    height: calc(100%-10px);
+    scale: 0.98;
+}
+.gig-img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.g-img1{
+    background: var(--dark) url(https://th.bing.com/th/id/R.8fe7597a3f73500b8c3ad67cd8c1a521?rik=JTAJi4xODTpsyg&pid=ImgRaw&r=0);
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.g-img2{
+    background: var(--dark) url(https://th.bing.com/th/id/R.fd6463fbb3f9fbf6ccdcbe5ff06ee87d?rik=faAjALeNaaV0kw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-logo-design-looking-for-graphics-and-logo-design-professionals-hire-mxicoders-pvt-ltd-we-are-one-1000.png&ehk=IO09jDGXQ1r4QcbVOj4VJt02QW1u9r1CTyTwdvPz%2bHI%3d&risl=&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+}
+.g-img3{
+    background: var(--dark) url(https://th.bing.com/th/id/OIP.nARiR4upmG8XTAgmxOQv_gHaEK?pid=ImgDet&rs=1);
+    background-size: cover;
+}
+.g-img4{
+    background: var(--dark) url(https://th.bing.com/th/id/OIP.nARiR4upmG8XTAgmxOQv_gHaEK?pid=ImgDet&rs=1);
+    background-size: cover;
+}
+.g-img5{
+    background: var(--dark) url(https://th.bing.com/th/id/OIP.nARiR4upmG8XTAgmxOQv_gHaEK?pid=ImgDet&rs=1);
+    background-size: cover;
+}
+.g-img6{
+    background: var(--dark) url(https://th.bing.com/th/id/OIP.nARiR4upmG8XTAgmxOQv_gHaEK?pid=ImgDet&rs=1);
+    background-size: cover;
+}
+.gig-desc{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 15px;
+}
+.tt{
+    font-size: 17px;
+}
+.tg, .pg{
+    font-weight: bolder;
+    font-size: 17px;
+}
+.g-order{
+     outline: none;
+     border: none;
+     padding: 10px;
+     color: #fff;
+     background: linear-gradient(to top right, yellowgreen,green);
+     border-radius: 10px;
+     box-shadow: inset 3px 3px 10px rgba(0, 0, 0,.1), -3px -3px 10px rgba(0, 0, 0, .3),inset 5px 5px 5px rgba(0,0,0,.2);
+     width: 100%;
+     margin: 10px 0 0 0;
+     cursor: pointer;
+}
+.g-order:active{
+    scale: 0.985;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .1), -3px -3px 10px rgba(0, 0, 0, 0), inset 5px 5px 5px rgba(0, 0, 0, .2);
+}
+.about_me{
+    width: 100%;
+    height: auto;
+}
+.g-about_me{
+    margin: 15px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.about_body{
+    width: 100%;
+    padding: 15px;
+}
+.spec{
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.about_body li{
+    color: #000;
+}
+.about_body ul{
+    margin: 0 20px;
+    margin-top: 10px;
+}
+.about_body ul{
+    margin: 0 20px;
+    margin-top: 10px;
+}
+.contact_me{
+    width: 100%;
+    height: auto;
+    background: var(--dark);
+    margin-top: 15px;
+    padding: 15px;
+    color: #E8ECF7;
+}
+.contact_me li{
+    list-style-type: none;
+    margin-left: 5px;
+}
+.contact_me .links{
+    margin-top: 10px;
+}
+.contact_me .contact-info{
+    margin-top: 6px;
+}
+.contact_me .contact-info i{
+    margin: 0 3px;
+}
+.contact_me li a{
+    color: #E8ECF7;
+}
+.contact_me h2{
+    color: yellowgreen;
+    font-size: 20.5px;
+    margin: 5px 0;
+}
+.social,.social-icons{
+    margin: 10px 0;
+}
+.box{
+    width: 80%;
+    height: auto;
+    background: white;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .1), -3px -3px 10px rgba(0, 0, 0, .3),inset 5px 5px 5px rgba(0, 0, 0, .15);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.box button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #FFF;
+    background: linear-gradient(to top right, yellowgreen,green);
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .1),-3px -3px 10px rgba(0, 0, 0, .3),inset 5px 5px 5px rgba(0, 0, 0, .15);
+    width: 100%;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+}
+.box button i{
+    padding: 3px;
+    font-size: 16px;
+}
+.footer-section ul li a:hover{
+    color: aqua;
+    transition: .8s;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Changing</title>
+</head>
+<body id="body">
+    <button onclick="random()" class="font-effect-fire">Click Me</button>
+    <h1 id="show"></h1>
+    <h1 id="follow"><a href="https://www.instagram.com/sourab_luitel/"><i>Follow me!</i></a></h1>
+   
+    <script>
+        function random(){
+            navigator.vibrate(70)
+            var x = "0123456789ABCDEF";
+            var y = "#";
+            for(var i = 0;i<6;i++){
+                y +=x[Math.floor(Math.random()*16)];
+                document.getElementById("body").style.backgroundColor = y;
+            }
+            document.getElementById("show").innerHTML = y;
+        }
+    </script>
+
+
+</body>
+</html>

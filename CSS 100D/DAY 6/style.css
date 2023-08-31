@@ -100,12 +100,18 @@ section img #mountains_front{
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
-    border-radius: 40px;
-    background: #fff;
+    border-radius: 20%;
+    background-color: #f0f;
+    border: solid 5px #0ff;
     color: #2b1055;
     font-size: 1.5em;
     z-index: 0;
     transform: translateY(100px);
+    transition: 1s;
+}
+#btn:hover{
+   background-color: #0ff;
+   border: 5px solid #f0f;
 }
 .sec{
     position: relative;
